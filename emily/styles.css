@@ -1,11 +1,138 @@
-*{
+* {
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
-}
-body{
-    background-color: white;
-}
-section area{
-    background-color: black;
+    box-sizing: border-box;
+    /* background-color: rgb(0, 119, 255); */
 }
 
+body {
+    background-color: white;
+}
+
+
+#cabecalho {
+    color: #142336;
+    font-size: 45px;
+}
+
+strong {
+    color: #C59D6F;
+}
+
+#slogan {
+    color: #142336;
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* Espaça o main-content e a emily */
+    align-items: center;
+    /* Centraliza verticalmente o main-content em relação à emily */
+    margin-top: 0px;
+    /* Margem em relação ao topo do site */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Centraliza verticalmente o conteúdo em relação à emily */
+    margin-top: 50px;
+}
+
+.main-pag {
+    margin-bottom: 20px;
+}
+
+
+.contato{
+    background-image: linear-gradient(90deg, #7CC167, #3BAF42);
+    height: 50px;
+    width: 318px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.contato>a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.whatsapp {
+    position: absolute;
+    right: -60px;
+    height: 50px;
+}
+
+.emily {
+    align-self: flex-start;
+}
+
+.img-emily {
+    height: 618px;
+    width: auto;
+}
+
+#atuacao {
+    font-size: 20px;
+    text-align: center;
+    color: #97979c;
+}
+
+section[area] h2 {
+    margin: 15px;
+    text-align: center;
+    font-size: 2em;
+}
+
+section[area] p,
+h3 {
+    padding-top: 10px;
+}
+
+.sessao-chechlist {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1080px;
+}
+
+.card-info {
+    height: 243px;
+    width: 312px;
+    text-align: left;
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+    background-image: linear-gradient(0deg, #525D6B, #1A283B);
+    display: flex;
+    flex-direction: column;
+}
+
+section[area] > .contato{
+    margin: 20px auto;
+}
+.sobre {
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    margin-top: 10px;
+
+    background-color: #151F2C;
+    color: white;
+}
