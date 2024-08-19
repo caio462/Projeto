@@ -127,12 +127,86 @@ h3 {
 section[area] > .contato{
     margin: 20px auto;
 }
+
 .sobre {
     width: 100%;
     height: 100vh;
     padding: 20px;
     margin-top: 10px;
-
+    align-content: center;
     background-color: #151F2C;
     color: white;
+}
+
+.conteudo-sobre {
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+#OAB {
+    font-size: 19px;
+    color: #97979c;
+    text-align: left;
+}
+
+section[sobre]{
+    font-size: 17px;
+    text-align: left;
+}
+
+.imagem-sobre {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-sobre img {
+    max-width: 100%;
+    height: auto;
+    align-items: baseline;
+}
+
+.contato {
+    margin-top: 20px;
+}
+
+.whatsapp {
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+#text-diferenciais {
+    font-size: 20px;
+    text-align: center;
+    color: #97979c;
+    margin-top: 50px;
+}
+
+section[diferencias] h2 {
+    margin: 15px;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.sessao-chechlist-servicos {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1080px;
+}
+
+.card-info-servicos {
+    height: 211px;
+    width: 510px;
+    text-align: left;
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+    background-image: linear-gradient(0deg, #C69E71, #D1B391);
+    display: flex;
+    flex-direction: column;
 }
