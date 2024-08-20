@@ -28,12 +28,15 @@ strong {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /*deixa o centeudo centralizado */
+    gap: 10px;
     /* Espaça o main-content e a emily */
     align-items: center;
     /* Centraliza verticalmente o main-content em relação à emily */
     margin-top: 0px;
     /* Margem em relação ao topo do site */
+    margin-bottom: 15px;
 }
 
 .main-content {
@@ -46,10 +49,11 @@ strong {
 
 .main-pag {
     margin-bottom: 20px;
+    max-width: 550px;
 }
 
 
-.contato{
+.contato {
     background-image: linear-gradient(90deg, #7CC167, #3BAF42);
     height: 50px;
     width: 318px;
@@ -124,11 +128,18 @@ h3 {
     flex-direction: column;
 }
 
-section[area] > .contato{
+section[area]>.contato {
     margin: 20px auto;
 }
 
 .sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+
     width: 100%;
     height: 100vh;
     padding: 20px;
@@ -138,9 +149,19 @@ section[area] > .contato{
     color: white;
 }
 
+.imagem-sobre{
+    max-width: 300px;
+    width: 30%;
+    height: auto;
+}
+
 .conteudo-sobre {
     max-width: 50%;
     padding-right: 20px;
+}
+
+.conteudo-sobre > p {
+    text-align: justify;
 }
 
 #OAB {
@@ -149,7 +170,7 @@ section[area] > .contato{
     text-align: left;
 }
 
-section[sobre]{
+section[sobre] {
     font-size: 17px;
     text-align: left;
 }
