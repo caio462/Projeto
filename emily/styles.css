@@ -231,3 +231,23 @@ section[diferencias] h2 {
     display: flex;
     flex-direction: column;
 }
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #142336;
+    height: 168px;
+    text-align: center;
+}
+
+#logo-copyright {
+    width: 150px;
+    height: 33px;
+    margin-bottom: 10px;
+}
+
+.container-footer > p {
+    color: white;
+    font-size: 16px;
+}
