@@ -265,10 +265,8 @@ section[duvidas] {
 .duvidas-fqts p {
     padding: .0em 0em .6em 1em;
     text-align: justify;
-    color: #6b6b6d;
+    color: #303030;
 }
-
-
 
 .container-footer {
     display: flex;
