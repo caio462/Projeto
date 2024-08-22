@@ -149,7 +149,7 @@ section[area]>.contato {
     color: white;
 }
 
-.imagem-sobre{
+.imagem-sobre {
     max-width: 300px;
     width: 30%;
     height: auto;
@@ -160,7 +160,7 @@ section[area]>.contato {
     padding-right: 20px;
 }
 
-.conteudo-sobre > p {
+.conteudo-sobre>p {
     text-align: justify;
 }
 
@@ -231,6 +231,45 @@ section[diferencias] h2 {
     display: flex;
     flex-direction: column;
 }
+
+/* DUVIDAS FREQUENTES */
+section[duvidas] {
+    padding: .5em 0em;
+    margin: 1em 0em 0em 0em;
+}
+
+.duvidas-fqts {
+    width: 100w;
+    max-width: 1000px;
+    text-align: center;
+    margin: 2em auto;
+    text-align: start;
+}
+
+.duvidas-fqts h1{
+    text-align: center;
+    margin: 1em 0em;
+}
+
+.duvidas-fqts h3 {
+    color: #465e7e;
+    padding-bottom: .2em;
+}
+
+.duvidas-fqts h4 {
+    padding: 0em 0em .2em 1em;
+    text-align: justify;
+    color: #6280a7;
+}
+
+.duvidas-fqts p {
+    padding: .0em 0em .6em 1em;
+    text-align: justify;
+    color: #6b6b6d;
+}
+
+
+
 .container-footer {
     display: flex;
     flex-direction: column;
@@ -247,7 +286,7 @@ section[diferencias] h2 {
     margin-bottom: 10px;
 }
 
-.container-footer > p {
+.container-footer>p {
     color: white;
     font-size: 16px;
 }
