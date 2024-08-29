@@ -149,7 +149,7 @@ section[atendimento] {
     padding-bottom: .3em;
 }
 
-.card-info-atendimento>p {}
+/* .card-info-atendimento>p {} */
 
 .sessao-passo-atendimento {
     display: flex;
@@ -299,7 +299,7 @@ section[duvidas] {
 }
 
 .duvidas-fqts p {
-    padding: .0em 0em .6em 1em;
+    padding: .0em .6em .6em 1em;
     text-align: justify;
     color: #303030;
 }
@@ -309,6 +309,7 @@ section[duvidas] {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    justify-content: center;
     background-color: #142336;
     height: 168px;
     text-align: center;
