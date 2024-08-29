@@ -8,6 +8,7 @@
 
 body {
     background-color: white;
+    padding-top: 10px;
 }
 
 
@@ -29,6 +30,7 @@ strong {
 .container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     /*deixa o centeudo centralizado */
     gap: 10px;
     /* Espaça o main-content e a emily */
@@ -130,6 +132,40 @@ h3 {
 
 section[area]>.contato {
     margin: 20px auto;
+}
+
+/* PASSO A PASSO ATENDIMENTO */
+section[atendimento]>h1 {
+    display: block;
+    text-align: center;
+    padding: 2em 0em;
+}
+
+section[atendimento] {
+    justify-content: center;
+}
+
+.card-info-atendimento>h3 {
+    padding-bottom: .3em;
+}
+
+.card-info-atendimento>p {}
+
+.sessao-passo-atendimento {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7em;
+
+    margin: 0em 2em 3em 2em;
+    padding: 0em 4.5em;
+
+}
+
+.card-info-atendimento {
+    max-width: 300px;
+    text-align: start;
 }
 
 /* SOBRE */
@@ -246,7 +282,7 @@ section[duvidas] {
     text-align: start;
 }
 
-.duvidas-fqts h1{
+.duvidas-fqts h1 {
     text-align: center;
     margin: 1em 0em;
 }
