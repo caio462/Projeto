@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap);
 
+
+
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -33,13 +36,9 @@ strong {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /*deixa o centeudo centralizado */
     gap: 10px;
-    /* Espaça o main-content e a emily */
     align-items: center;
-    /* Centraliza verticalmente o main-content em relação à emily */
     margin-top: 0px;
-    /* Margem em relação ao topo do site */
     margin-bottom: 15px;
 }
 
@@ -47,7 +46,6 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* Centraliza verticalmente o conteúdo em relação à emily */
     margin-top: 50px;
 }
 
@@ -175,31 +173,34 @@ section[atendimento] {
 section[sobre] {
     font-size: 17px;
     text-align: left;
-    min-width: 100vw;
 }
 
 .sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 10px;
+    align-content: center;
+    background-color: #151F2C;
+    color: white;
+}
+.containerSobre{
+    max-width: 1920px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 15px;
-
-
-    width: 100%;
-    min-height: 100vh;
-    padding: 20px;
-    margin-top: 10px;
-    align-content: center;
-    background-color: #151F2C;
-    color: white;
+    padding: 1em 0em;
 }
 
 .conteudo-sobre {
     width: 50%;
     min-width: 300px;
-    padding-right: 20px;
 }
 
 .conteudo-sobre>p {
@@ -256,6 +257,7 @@ section[diferencias] h2 {
     gap: 20px;
     justify-content: center;
     max-width: 1080px;
+    
 }
 
 .card-info-servicos {
@@ -263,89 +265,86 @@ section[diferencias] h2 {
     width: 510px;
     text-align: left;
     padding: 15px;
+    margin: 0em .4em;
     color: white;
     border-radius: 15px;
     background-image: linear-gradient(0deg, #C69E71, #D1B391);
     display: flex;
     flex-direction: column;
+
 }
 
 /* DUVIDAS FREQUENTES */
-section[duvidas] {
-    min-height: 100vh;
-    width: 80%;
-    padding: .5em 0em;
-    margin: auto;
-    background-color: #1c1c11;
+section.duvidas {
+    padding: .5em .5em;
+    background-color: #151F2C;
     color: white;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    margin-top: 30px;
 }
 
-section[duvidas] h1 {
+section.duvidas h1 {
     font-size: 2rem;
-    margin: 2rem, 0rem;
+    margin: 2rem 0rem;
 }
 
-.pergunta-resposta{
+.perguntaResposta {
     max-width: 700px;
     margin-top: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid white;
     cursor: pointer;
+    text-align: left; /* Alinha o conteúdo à esquerda */
 }
 
-.pergunta{
+.pergunta {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.pergunta h3{
-    font-size: 1.8rem;
+.pergunta h3 {
+    font-size: 1.5rem; /* Diminui o tamanho do texto */
 }
-.resposta{
+
+.resposta {
+    margin-top: 15px;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 1.4s ease;
 }
-.resposta p{
-    padding: 1rem;
-    line-height: 1.6;
-    font-size: 1.4rem;
-}
-
-/*
-
-.duvidas-fqts {
-    width: 100w;
-    max-width: 1000px;
-    text-align: center;
-    margin: 2em auto;
-    text-align: start;
+.pergunta{
+    padding-bottom: .3em;
 }
 
-.duvidas-fqts h1 {
-    text-align: center;
-    margin: 1em 0em;
+.perguntaResposta.active .resposta {
+    max-height: 300px;
+    animation: fade 1s ease-in-out;
 }
 
-.duvidas-fqts h3 {
-    color: #465e7e;
-    padding-bottom: .2em;
+.perguntaResposta.active span {
+    transform: rotate(180deg);
 }
 
-.duvidas-fqts h4 {
-    padding: 0em 0em .2em 1em;
-    text-align: justify;
-    color: #6280a7;
+span {
+    transition: transform 0.5s ease-in;
 }
 
-.duvidas-fqts p {
-    padding: .0em .6em .6em 1em;
-    text-align: justify;
-    color: #303030;
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
-*/
+
+
 
 .container-footer {
     display: flex;
@@ -353,7 +352,7 @@ section[duvidas] h1 {
     justify-content: flex-start;
     align-items: center;
     justify-content: center;
-    background-color: #142336;
+    background-color: #151F2C;
     height: 168px;
     text-align: center;
 }
