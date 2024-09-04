@@ -143,6 +143,22 @@ section[atendimento]>h1 {
 
 section[atendimento] {
     justify-content: center;
+    margin: auto;
+    max-width: 1080px;
+ 
+}
+
+.card-atendimento{
+    height: 200px;
+    width: 312px;
+    text-align: left;
+    padding: 15px;
+    color: white;
+    border-radius: 15px;
+    /* background-image: linear-gradient(0deg, #525D6B, #1A283B); */
+    background-image: linear-gradient(0deg, #1A283B, #1A283B);
+    display: flex;
+    flex-direction: column;
 }
 
 .card-info-atendimento>h3 {
@@ -153,13 +169,13 @@ section[atendimento] {
 
 .sessao-passo-atendimento {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 7em;
+    gap: 2em;
 
-    margin: 0em 2em 3em 2em;
-    padding: 0em 4.5em;
+    /* margin: 0em 2em 3em 2em;
+    padding: 0em 4.5em; */
 
 }
 
@@ -194,12 +210,13 @@ section[sobre] {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
     padding: 1em 0em;
 }
 
 .conteudo-sobre {
     width: 50%;
+    max-width: 40rem;
     min-width: 300px;
 }
 
@@ -222,7 +239,7 @@ section[sobre] {
 
 .imagem-sobre img {
     border-radius: 15px;
-    max-width: 400px;
+    max-width: 470px;
     min-width: 300px;
     height: auto;
 }
@@ -242,6 +259,8 @@ section[sobre] {
     color: #97979c;
     margin-top: 50px;
 }
+
+/* Diferencias */
 
 section[diferencias] h2 {
     margin: 15px;
@@ -345,7 +364,7 @@ span {
 }
 
 
-
+/* Footer */
 .container-footer {
     display: flex;
     flex-direction: column;
