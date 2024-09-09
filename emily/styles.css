@@ -341,6 +341,7 @@ section[diferencias] h2 {
     justify-content: center;
     align-items: center;
     gap: 1em;
+    margin: 0em .3em;
 
 }
 
@@ -446,4 +447,3 @@ span {
     color: white;
     font-size: 16px;
 }
-
