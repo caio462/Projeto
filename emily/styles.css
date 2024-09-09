@@ -104,9 +104,25 @@ section[area] h2 {
     font-size: 2em;
 }
 
-section[area] p,
-h3 {
-    padding-top: 10px;
+section[area] h3
+{
+    padding: .8em 0em;
+}
+
+.background-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#icon-cards{
+    font-size: 2em;
+    color: #222F41;
+
 }
 
 .sessao-chechlist {
@@ -148,6 +164,13 @@ section[atendimento] {
  
 }
 
+.numeroCard{
+    font-size: 3.5em;
+}
+
+.titulo-card-atendi{
+    padding: 0em 0em .5em 0em;
+}
 .card-atendimento{
     height: 200px;
     width: 312px;
@@ -155,15 +178,23 @@ section[atendimento] {
     padding: 15px;
     color: white;
     border-radius: 15px;
-    /* background-image: linear-gradient(0deg, #525D6B, #1A283B); */
     background-image: linear-gradient(0deg, #1A283B, #1A283B);
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
 }
 
-.card-info-atendimento>h3 {
-    padding-bottom: .3em;
+.card-info-atendimento{
+    display: flex;
+    align-items: center;
+    gap: .8em;
 }
+
+/* .card-info-atendimento > div{
+    border-left: solid 1px white;
+    padding-left: .5em;
+} */
+
 
 /* .card-info-atendimento>p {} */
 
@@ -182,6 +213,7 @@ section[atendimento] {
 .card-info-atendimento {
     max-width: 300px;
     text-align: start;
+
 }
 
 /* SOBRE */
