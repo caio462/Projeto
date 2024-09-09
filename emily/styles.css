@@ -295,10 +295,27 @@ section[sobre] {
 /* Diferencias */
 
 section[diferencias] h2 {
-    margin: 15px;
+    margin: 15px 0px;
     text-align: center;
     font-size: 2em;
     margin-bottom: 30px;
+}
+
+.backgound-icon-difer{
+    background-color: white;
+    padding: .3em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon-diferenciais{
+    color: #81684c;
+    font-size: 2.5em;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
 }
 
 .sessao-chechlist-servicos {
@@ -316,14 +333,23 @@ section[diferencias] h2 {
     width: 510px;
     text-align: left;
     padding: 15px;
-    margin: 0em .4em;
     color: white;
     border-radius: 15px;
     background-image: linear-gradient(0deg, #C69E71, #D1B391);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 
 }
+
+.card-info-servicos> div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 /* DUVIDAS FREQUENTES */
 section.duvidas {
@@ -336,6 +362,8 @@ section.duvidas {
     text-align: center;
     margin-top: 30px;
 }
+
+
 
 section.duvidas h1 {
     font-size: 2rem;
