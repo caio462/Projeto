@@ -1,8 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap);
 
-
-
-
 * {
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
@@ -11,11 +8,51 @@
     /* background-color: rgb(0, 119, 255); */
 }
 
+/* MOBILE */
+@media screen and (min-width:320px) and (max-width:992px) {
+
+    .contato{
+        width: 300px;
+    }
+
+    section[area]>.contato>a>p {
+        width: 250px;
+    }
+
+    .conteudo-sobre>.contato>a>p {
+        width: 250px;
+    }
+
+    .container {
+        text-align: center;
+    }
+
+    .main-content {
+        align-items: center;
+    }
+
+    .emily>img {
+        width: 300px;
+        height: auto;
+
+    }
+
+    .conteudo-sobre>.contato {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerSobre{
+        width: 100%;
+    }
+}
+
+
+
 body {
     background-color: white;
     padding-top: 10px;
 }
-
 
 #cabecalho {
     color: #142336;
@@ -54,34 +91,57 @@ strong {
     max-width: 550px;
 }
 
-
-.contato {
-    background-image: linear-gradient(90deg, #7CC167, #3BAF42);
-    height: 50px;
-    width: 318px;
-    border-radius: 5px;
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
 .contato>a {
     text-decoration: none;
-    color: white;
-    text-align: center;
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
+    color: white;
+    font-size: 1.2em;
+}
+
+.contato>a>p {
+    height: 50px;
+    width: 318px;
+
+    border-radius: 5px;
+    background-image: linear-gradient(90deg, #7CC167, #3BAF42);
+    display: flex;
     justify-content: center;
-    font-size: 20px;
+    align-items: center;
 }
 
 .whatsapp {
-    position: absolute;
-    right: -60px;
     height: 50px;
+    width: auto;
 }
+
+/* .contato {
+        background-image: linear-gradient(90deg, #7CC167, #3BAF42);
+        height: 50px;
+        width: 318px;
+        border-radius: 5px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .contato>a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+    }
+    
+    .whatsapp {
+        position: absolute;
+        right: -60px;
+        height: 50px;
+    } */
 
 .emily {
     align-self: flex-start;
@@ -104,12 +164,16 @@ section[area] h2 {
     font-size: 2em;
 }
 
-section[area] h3
-{
+section[area] h3 {
     padding: .8em 0em;
 }
 
-.background-icon{
+section[area]>.contato {
+    display: flex;
+    justify-content: center;
+}
+
+.background-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +183,7 @@ section[area] h3
     background-color: white;
 }
 
-#icon-cards{
+#icon-cards {
     font-size: 2em;
     color: #222F41;
 
@@ -135,7 +199,7 @@ section[area] h3
 }
 
 .card-info {
-    height: 243px;
+    min-height: 243px;
     width: 312px;
     text-align: left;
     padding: 15px;
@@ -161,18 +225,19 @@ section[atendimento] {
     justify-content: center;
     margin: auto;
     max-width: 1080px;
- 
+
 }
 
-.numeroCard{
+.numeroCard {
     font-size: 3.5em;
 }
 
-.titulo-card-atendi{
+.titulo-card-atendi {
     padding: 0em 0em .5em 0em;
 }
-.card-atendimento{
-    height: 200px;
+
+.card-atendimento {
+    min-height: 200px;
     width: 312px;
     text-align: left;
     padding: 15px;
@@ -184,16 +249,16 @@ section[atendimento] {
     flex-direction: row;
 }
 
-.card-info-atendimento{
+.card-info-atendimento {
     display: flex;
     align-items: center;
     gap: .8em;
 }
 
 /* .card-info-atendimento > div{
-    border-left: solid 1px white;
-    padding-left: .5em;
-} */
+        border-left: solid 1px white;
+        padding-left: .5em;
+    } */
 
 
 /* .card-info-atendimento>p {} */
@@ -206,7 +271,7 @@ section[atendimento] {
     gap: 2em;
 
     /* margin: 0em 2em 3em 2em;
-    padding: 0em 4.5em; */
+        padding: 0em 4.5em; */
 
 }
 
@@ -235,7 +300,8 @@ section[sobre] {
     background-color: #151F2C;
     color: white;
 }
-.containerSobre{
+
+.containerSobre {
     max-width: 1920px;
     display: flex;
     flex-direction: row;
@@ -301,7 +367,7 @@ section[diferencias] h2 {
     margin-bottom: 30px;
 }
 
-.backgound-icon-difer{
+.backgound-icon-difer {
     background-color: white;
     padding: .3em;
     border-radius: 50%;
@@ -310,7 +376,7 @@ section[diferencias] h2 {
     justify-content: center;
 }
 
-#icon-diferenciais{
+#icon-diferenciais {
     color: #81684c;
     font-size: 2.5em;
     font-weight: 300;
@@ -325,7 +391,7 @@ section[diferencias] h2 {
     gap: 20px;
     justify-content: center;
     max-width: 1080px;
-    
+
 }
 
 .card-info-servicos {
@@ -345,7 +411,7 @@ section[diferencias] h2 {
 
 }
 
-.card-info-servicos> div{
+.card-info-servicos>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -377,7 +443,8 @@ section.duvidas h1 {
     padding-bottom: 1rem;
     border-bottom: 2px solid white;
     cursor: pointer;
-    text-align: left; /* Alinha o conteúdo à esquerda */
+    text-align: left;
+    /* Alinha o conteúdo à esquerda */
 }
 
 .pergunta {
@@ -387,7 +454,8 @@ section.duvidas h1 {
 }
 
 .pergunta h3 {
-    font-size: 1.5rem; /* Diminui o tamanho do texto */
+    font-size: 1.5rem;
+    /* Diminui o tamanho do texto */
 }
 
 .resposta {
@@ -396,7 +464,8 @@ section.duvidas h1 {
     overflow: hidden;
     transition: max-height 1.4s ease;
 }
-.pergunta{
+
+.pergunta {
     padding-bottom: .3em;
 }
 
@@ -418,6 +487,7 @@ span {
         opacity: 0;
         transform: translateY(-10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0px);
