@@ -249,16 +249,8 @@ section[atendimento] {
 .card-info-atendimento {
     display: flex;
     align-items: center;
-    gap: .8em;
+    gap: .7em;
 }
-
-/* .card-info-atendimento > div{
-        border-left: solid 1px white;
-        padding-left: .5em;
-    } */
-
-
-/* .card-info-atendimento>p {} */
 
 .sessao-passo-atendimento {
     display: flex;
@@ -267,14 +259,11 @@ section[atendimento] {
     justify-content: center;
     gap: 2em;
 
-    /* margin: 0em 2em 3em 2em;
-        padding: 0em 4.5em; */
-
 }
 
 .card-info-atendimento {
     max-width: 300px;
-    text-align: start;
+    text-align: center;
 
 }
 
@@ -414,6 +403,9 @@ section[diferencias] h2 {
     justify-content: center;
 }
 
+.descricao-card { 
+    text-align: justify;
+}
 
 /* DUVIDAS FREQUENTES */
 section.duvidas {
@@ -460,6 +452,7 @@ section.duvidas h1 {
     max-height: 0;
     overflow: hidden;
     transition: max-height 1.4s ease;
+    text-align: justify;
 }
 
 .pergunta {
